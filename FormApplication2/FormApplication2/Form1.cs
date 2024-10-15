@@ -44,6 +44,7 @@ namespace FormApplication2
         {
             comboBox1.Items.Clear();
             
+            
         }
 
         private void ComboListButton_Click(object sender, EventArgs e)
