@@ -16,7 +16,12 @@ namespace FormApplication1
         {
             InitializeComponent();
         }
-
+        string name;
+        string surname;
+        DateTime birthday;
+        string country;
+        string gender;
+        string studentOr;
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -41,7 +46,39 @@ namespace FormApplication1
         {
             listBox1.Items.Clear(); 
             progressBar1.Value = 10;
+            name=nameTextBox.Text;
+            surname=surnameTextBox.Text;
+            birthday=dateTimePicker1.Value;
+            country=countryComboBox.SelectedText;
+            if (male.Checked)
+            {
+                gender="Male";
+
+            }else
+            {
+                gender="Female";
+            }
+            if (yes.Checked) {
+                studentOr="Yes";
+
+            }
+            else
+            {
+                studentOr="No";
+            }
             
+            
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(name);
+            listBox1.Items.Add(surname);
+            listBox1.Items.Add(birthday);
+            listBox1.Items.Add(gender);
+            listBox1.Items.Add(studentOr); 
+            listBox1.Items.Add(country);
 
         }
     }
