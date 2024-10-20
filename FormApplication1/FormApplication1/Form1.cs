@@ -15,13 +15,9 @@ namespace FormApplication1
         public Form1()
         {
             InitializeComponent();
+           
         }
-        string name;
-        string surname;
-        DateTime birthday;
-        string country;
-        string gender;
-        string studentOr;
+       
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -41,6 +37,13 @@ namespace FormApplication1
 
             
         }
+
+        string name;
+        string surname;
+        DateTime birthday;
+        string country;
+        string gender;
+        string studentOr;
 
         private void sendButton_Click(object sender, EventArgs e)
         {
@@ -67,18 +70,31 @@ namespace FormApplication1
                 studentOr="No";
             }
             
-            
+            //atanan degerleri ekleme 
+            listBox1.Items.Add(name);
+            listBox1.Items.Add(surname);
+            listBox1.Items.Add(birthday);
+            listBox1.Items.Add(gender);
+            listBox1.Items.Add(studentOr);
+            listBox1.Items.Add(country);
+
+            /*
+            nameTextBox.Text="";
+            surnameTextBox.Text="";
+            male.Checked=false;
+            female.Checked=false;
+            yes.Checked=false;
+            no.Checked=false;
+            */
+                
+                
+            progressBar1.Value = 100;
+
 
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1.Items.Add(name);
-            listBox1.Items.Add(surname);
-            listBox1.Items.Add(birthday);
-            listBox1.Items.Add(gender);
-            listBox1.Items.Add(studentOr); 
-            listBox1.Items.Add(country);
 
         }
     }
