@@ -30,16 +30,16 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelNav = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnAnalytic = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panelNav = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,6 +66,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 137);
             this.panel1.TabIndex = 2;
+            // 
+            // pnlFormLoader
+            // 
+            this.pnlFormLoader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFormLoader.Location = new System.Drawing.Point(214, 2);
+            this.pnlFormLoader.Name = "pnlFormLoader";
+            this.pnlFormLoader.Size = new System.Drawing.Size(683, 447);
+            this.pnlFormLoader.TabIndex = 9;
             // 
             // label2
             // 
@@ -113,6 +121,14 @@
             this.panel2.Size = new System.Drawing.Size(206, 304);
             this.panel2.TabIndex = 3;
             // 
+            // panelNav
+            // 
+            this.panelNav.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panelNav.Location = new System.Drawing.Point(0, 11);
+            this.panelNav.Name = "panelNav";
+            this.panelNav.Size = new System.Drawing.Size(3, 100);
+            this.panelNav.TabIndex = 3;
+            // 
             // btnSettings
             // 
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -143,7 +159,7 @@
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(206, 40);
             this.btnAddUser.TabIndex = 8;
-            this.btnAddUser.Text = "Add Users";
+            this.btnAddUser.Text = "Add Personal";
             this.btnAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAddUser.UseVisualStyleBackColor = true;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
@@ -185,39 +201,16 @@
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             this.btnDashboard.Leave += new System.EventHandler(this.btnDashboard_Leave);
             // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.Image = global::BookSellApplication.Properties.Resources.home_9449212__1_;
-            this.button4.Location = new System.Drawing.Point(266, 252);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(0, 0);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Dashboard";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panelNav
-            // 
-            this.panelNav.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panelNav.Location = new System.Drawing.Point(0, 11);
-            this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(3, 100);
-            this.panelNav.TabIndex = 3;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BookSellApplication.Properties.Resources.Screenshot_2024_12_02_134147;
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.pnlFormLoader);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.button4);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
@@ -240,10 +233,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnAnalytic;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Panel panelNav;
+        private System.Windows.Forms.Panel pnlFormLoader;
     }
 }

@@ -63,6 +63,16 @@ namespace BookSellApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _119243_OQ6MPG_604 {
+            get {
+                object obj = ResourceManager.GetObject("119243-OQ6MPG-604", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_friend_2198060__1_ {
             get {
                 object obj = ResourceManager.GetObject("add-friend_2198060 (1)", resourceCulture);
@@ -153,6 +163,16 @@ namespace BookSellApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rb_2147630138 {
+            get {
+                object obj = ResourceManager.GetObject("rb_2147630138", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rb_4707__1_ {
             get {
                 object obj = ResourceManager.GetObject("rb_4707 (1)", resourceCulture);
@@ -196,6 +216,26 @@ namespace BookSellApplication.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_12_02_134147 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-12-02 134147", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_12_02_181503 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-12-02 181503", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_7712341 {
+            get {
+                object obj = ResourceManager.GetObject("search_7712341", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
