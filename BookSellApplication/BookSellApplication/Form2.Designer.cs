@@ -30,7 +30,6 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,6 +39,7 @@
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnAnalytic = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,14 +66,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 137);
             this.panel1.TabIndex = 2;
-            // 
-            // pnlFormLoader
-            // 
-            this.pnlFormLoader.BackColor = System.Drawing.Color.Transparent;
-            this.pnlFormLoader.Location = new System.Drawing.Point(214, 2);
-            this.pnlFormLoader.Name = "pnlFormLoader";
-            this.pnlFormLoader.Size = new System.Drawing.Size(683, 447);
-            this.pnlFormLoader.TabIndex = 9;
             // 
             // label2
             // 
@@ -200,6 +192,17 @@
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             this.btnDashboard.Leave += new System.EventHandler(this.btnDashboard_Leave);
+            // 
+            // pnlFormLoader
+            // 
+            this.pnlFormLoader.AutoScroll = true;
+            this.pnlFormLoader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFormLoader.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlFormLoader.Location = new System.Drawing.Point(217, 0);
+            this.pnlFormLoader.Name = "pnlFormLoader";
+            this.pnlFormLoader.Size = new System.Drawing.Size(683, 450);
+            this.pnlFormLoader.TabIndex = 9;
+            this.pnlFormLoader.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlFormLoader_Paint);
             // 
             // Form2
             // 

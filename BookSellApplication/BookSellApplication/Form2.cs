@@ -32,10 +32,10 @@ namespace BookSellApplication
             btnDashboard.BackColor=Color.FromArgb(146, 158, 173);
             //lblTitle.Text="Dashboard";
             this.pnlFormLoader.Controls.Clear();
-            Form3 form3 = new Form3() { Dock=DockStyle.Fill, TopLevel=false, TopMost=true };
-            form3.FormBorderStyle=FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(form3);
-            form3.Show();
+            Dashboard dashboard = new Dashboard() { Dock=DockStyle.Fill, TopLevel=false, TopMost=true };
+            dashboard.FormBorderStyle=FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(dashboard);
+            dashboard.Show();
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -69,10 +69,10 @@ namespace BookSellApplication
             btnDashboard.BackColor=Color.FromArgb(146, 158, 173);
             //lblTitle.Text="Dashboard";
             this.pnlFormLoader.Controls.Clear();
-            Form3 form3 = new Form3() { Dock=DockStyle.Fill, TopLevel=false, TopMost=true };
-            form3.FormBorderStyle=FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(form3);
-            form3.Show();
+            Dashboard dashboard = new Dashboard() { Dock=DockStyle.Fill, TopLevel=false, TopMost=true };
+            dashboard.FormBorderStyle=FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(dashboard);
+            dashboard.Show();
        
         }
 
@@ -147,6 +147,11 @@ namespace BookSellApplication
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pnlFormLoader_Paint(object sender, PaintEventArgs e)
         {
 
         }
